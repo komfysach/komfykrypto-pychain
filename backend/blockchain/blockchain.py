@@ -1,4 +1,5 @@
 from _pytest.python_api import raises
+from flask.json import jsonify
 from backend.tests.blockchain.test_block import block, last_block
 from backend.blockchain.block import Block
 
@@ -31,6 +32,13 @@ class Blockchain:
             raise Exception(f'Cannot replace. The incoming chain is invalid: {e}')
         
         self.chain = chain
+        
+    def to_json(self):
+        """
+        Serialise the blockchain into a list of blocks.
+        """
+        
+        return list(map(lambda block: block.to_json(), self.chain))
     
     @staticmethod
     def is_valid_chain(chain):

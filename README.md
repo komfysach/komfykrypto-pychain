@@ -16,3 +16,11 @@ Make sure to activate the virtual environment.
 ```
 python -m pytest backend/tests
 ```
+
+**Run the application API**
+
+Make sure to activate the virtual environment.
+
+```
+python -m backend.app
+```
