@@ -24,3 +24,13 @@ Make sure to activate the virtual environment.
 ```
 python -m backend.app
 ```
+
+**Run a peer instance**
+
+Make sure to activate the virtual environment.
+
+Use Git Bash
+
+```
+export PEER=True && python -m backend.app
+```
