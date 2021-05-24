@@ -34,3 +34,11 @@ Use Git Bash
 ```
 export PEER=True && python -m backend.app
 ```
+
+**Seed the backend with data**
+
+Make sure to activate the virtual environment
+
+```
+export SEED_DATE=True && python -m backend.app
+```
